@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('CursedTimerUlil-Aznm.ttf') format('truetype');
+}
+html { background: #1B244A; }
+body {
+    margin: 0;
+  
+    min-height: 100vh;
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: -50%;
+  background:
+    radial-gradient(circle at 35% 45%, rgba(244, 78, 108, .22), transparent 22%),
+    radial-gradient(circle at 65% 55%, rgba(90, 130, 255, .22), transparent 22%);
+  animation: sweep 14s ease-in-out infinite alternate;
+  z-index: -1;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at 50% 50%,
+      transparent 139px, rgba(255,255,255,.10) 140px,
+      rgba(255,255,255,.10) 142px, transparent 143px),
+    linear-gradient(90deg,
+      transparent calc(50% - 1px), rgba(255,255,255,.10) calc(50% - 1px),
+      rgba(255,255,255,.10) calc(50% + 1px), transparent calc(50% + 1px));
+  z-index: -1;
+}
+
+@keyframes sweep {
+  to { transform: translate(8%, -6%) rotate(25deg); }
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    color:#EEEEEE;
+    align-content: center;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.box{
+    width: 100%;
+    height: 120px;
+    background-color: #080001;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    border-radius: 5px;
+    margin: 0 0 ;
+}
+p{
+    color: #F94F6D;
+    font-size: 60px;
+    font-family: MyCustomFont;
+    display: flex;
+   
+}
+.solutionContainer{
+     display: flex;
+     justify-content: space-around;
+     width: 100%;
+}
+.solution{
+    width:45px;
+    height:45px;
+    margin-top: 10px;
+    margin-right: 10px;
+    background: none;           
+    border: 2px solid #9aabd8;  
+    color: #f94f6d;             
+    font-family: MyCustomFont;    
+    cursor: pointer;
+    border-radius: 5px;
+}
+.reset {
+  display: block;
+  width: 240px;
+  height: 45px;
+  margin: 20px auto 0;
+  background: none;
+  border: 2px solid #9aabd8;
+  color: #f94f6d;
+  font-family: MyCustomFont;
+  cursor: pointer;
+  border-radius: 5px;
+}

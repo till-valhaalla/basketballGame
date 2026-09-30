@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+       
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <h3>HOME</h3>
+                <div class="box">
+                    <p id="homeRecord">0</p>
+                </div>
+                <div class="solutionContainer">
+                    <button class="solution"   onclick="homePlus1()">+1</button> 
+                    <button class="solution"   onclick="homePlus2()">+2</button> 
+                    <button class="solution"  onclick="homePlus3()">+3</button> 
+                </div> 
+                
+            </div>
+            <div>
+                <h3>GUEST</h3>
+                <div class="box">
+                    <p id="guestRecord">0</p>
+                </div>
+                <div class="solutionContainer">
+                    <button class="solution"  onclick="guestPlus1()">+1</button> 
+                    <button class="solution"  onclick="guestPlus2()">+2</button> 
+                    <button class="solution"  onclick="guestPlus3()">+3</button> 
+                </div>  
+                
+            </div>
+           
+        </div>
+         <button class="reset" onclick="resetScoreHome()">Reset Game</button>  
+        <script src="index.js"></script>
+    </body>
+</html>
