@@ -27,7 +27,8 @@ function guestPlus3() {
   guestRecord.innerText = countGuest;
 }
 function resetScoreHome() {
-  let count = 0;
-  guestRecord.innerText = count;
-  homeRecord.innerText = count;
+  countHome = 0;
+  countGuest = 0;
+  guestRecord.innerText = countGuest;
+  homeRecord.innerText = countHome;
 }
